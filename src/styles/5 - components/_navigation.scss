@@ -1,7 +1,8 @@
 .navigation {
   width: 100%;
   height: 10rem;
-  background: $background-color;
+  // background: $background-color;
+  background-color: #99D6EA;
   display: flex;
   align-items: center;
   padding: .5rem 5rem;
@@ -28,9 +29,12 @@
   }
 
   .logo img {
-    width: 15rem;
+    // width: 15rem;
+    width: 70%;
+    display: hidden;
     height: inherit;
     object-fit: contain;
+    
   }
 
   .logo a {

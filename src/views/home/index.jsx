@@ -5,9 +5,10 @@ import { FEATURED_PRODUCTS, RECOMMENDED_PRODUCTS, SHOP } from 'constants/routes'
 import {
   useDocumentTitle, useFeaturedProducts, useRecommendedProducts, useScrollTop
 } from 'hooks';
-import bannerImg from 'images/banner-girl.png';
+import bannerImg from 'images/herobanner.png';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Test from './test';
 
 
 const Home = () => {
@@ -28,30 +29,31 @@ const Home = () => {
   } = useRecommendedProducts(6);
 
   return (
-    <main className="content">
-      <div className="home">
-        <div className="banner">
+    <>
+    <main className="content bb ">
+      <div className="home ">
+        <div className="banner cc">
           <div className="banner-desc">
             <h1 className="text-thin">
-              <strong>See</strong>
-              &nbsp;everything with&nbsp;
-              <strong>Clarity</strong>
+              <strong>SHOP CBD <br/>WITH MEDIK 420</strong>
+              {/* <strong>SHOP CBD</strong> */}
+              {/* &nbsp;CBD with&nbsp; */}
+              {/* <strong>WITH MEDIK420</strong> */}
             </h1>
             <p>
-              Buying eyewear should leave you happy and good-looking, with money in your pocket.
-              Glasses, sunglasses, and contacts—we’ve got your eyes covered.
+             WE ALWAYS DELIVER YOUR SMILE WITH A SMILE
             </p>
             <br />
             <Link to={SHOP} className="button">
-              Shop Now &nbsp;
-              <ArrowRightOutlined />
+              SHOP CBD &nbsp;
+              {/* <ArrowRightOutlined /> */}
             </Link>
           </div>
-          <div className="banner-img"><img src={bannerImg} alt="" /></div>
+          <div className="banner-img"><img src={bannerImg} alt="" className='image'/></div>
         </div>
         <div className="display">
           <div className="display-header">
-            <h1>Featured Products</h1>
+            <h1 className='featured-header'>FEATURED</h1>
             <Link to={FEATURED_PRODUCTS}>See All</Link>
           </div>
           {(errorFeatured && !isLoadingFeatured) ? (
@@ -68,8 +70,8 @@ const Home = () => {
           )}
         </div>
         <div className="display">
-          <div className="display-header">
-            <h1>Recommended Products</h1>
+          <div className="display-header ">
+            <h1 className='text-3xl  '>RECOMMENDED</h1>
             <Link to={RECOMMENDED_PRODUCTS}>See All</Link>
           </div>
           {(errorRecommended && !isLoadingRecommended) ? (
@@ -85,8 +87,10 @@ const Home = () => {
             />
           )}
         </div>
+        <Test/>
       </div>
     </main>
+    </>
   );
 };
 

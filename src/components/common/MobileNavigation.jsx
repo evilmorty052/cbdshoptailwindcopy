@@ -23,7 +23,7 @@ const Navigation = (props) => {
       <div className="mobile-navigation-main">
         <div className="mobile-navigation-logo">
           <Link onClick={onClickLink} to={HOME}>
-            <h2>LUNETAS-CAM</h2>
+            <h2>MEDIK420</h2>
           </Link>
         </div>
 
@@ -64,14 +64,14 @@ const Navigation = (props) => {
           )}
         </ul>
       </div>
-      <div className="mobile-navigation-sec">
+      {/* <div className="mobile-navigation-sec">
         <SearchBar />
         <FiltersToggle>
           <button className="button-link button-small" type="button">
             <i className="fa fa-filter" />
           </button>
         </FiltersToggle>
-      </div>
+      </div> */}
     </nav>
   );
 };

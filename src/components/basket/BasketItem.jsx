@@ -35,22 +35,22 @@ const BasketItem = ({ product }) => {
               <h5 className="my-0">{product.quantity}</h5>
             </div>
             <div>
-              <span className="spec-title">Size</span>
-              <h5 className="my-0">
+              {/* <span className="spec-title">Size</span> */}
+              {/* <h5 className="my-0">
                 {product.selectedSize}
                 {' '}
                 mm
-              </h5>
+              </h5> */}
             </div>
             <div>
-              <span className="spec-title">Color</span>
-              <div style={{
+              {/* <span className="spec-title">Color</span> */}
+              {/* <div style={{
                 backgroundColor: product.selectedColor || product.availableColors[0],
                 width: '15px',
                 height: '15px',
                 borderRadius: '50%'
               }}
-              />
+              /> */}
             </div>
           </div>
         </div>

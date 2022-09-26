@@ -108,26 +108,26 @@ const ViewProduct = () => {
               <div className="divider" />
               <br />
               <div>
-                <span className="text-subtle">Lens Width and Frame Size</span>
+                {/* <span className="text-subtle">Lens Width and Frame Size</span> */}
                 <br />
                 <br />
-                <Select
+                {/* <Select
                   placeholder="--Select Size--"
                   onChange={onSelectedSizeChange}
                   options={product.sizes.sort((a, b) => (a < b ? -1 : 1)).map((size) => ({ label: `${size} mm`, value: size }))}
                   styles={{ menu: (provided) => ({ ...provided, zIndex: 10 }) }}
-                />
+                /> */}
               </div>
               <br />
               {product.availableColors.length >= 1 && (
                 <div>
-                  <span className="text-subtle">Choose Color</span>
+                  {/* <span className="text-subtle">Choose Color</span> */}
                   <br />
                   <br />
-                  <ColorChooser
+                  {/* <ColorChooser
                     availableColors={product.availableColors}
                     onSelectedColorChange={onSelectedColorChange}
-                  />
+                  /> */}
                 </div>
               )}
               <h1>{displayMoney(product.price)}</h1>

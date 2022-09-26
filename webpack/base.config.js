@@ -22,7 +22,7 @@ module.exports = {
         loader: 'babel-loader'
       }
     }, {
-      test: /\.(sa|sc|c)ss$/,
+      test: /\.scss$/,
       use: [
         {
           loader: MiniCssExtractPlugin.loader
@@ -43,7 +43,16 @@ module.exports = {
           }
         }
       ]
-    }, {
+    },{
+      // Extract any CSS content and minimize
+      test: /\.css$/,
+      use: [
+          MiniCssExtractPlugin.loader,
+          { loader: 'css-loader', options: { importLoaders: 1 } },
+          { loader: 'postcss-loader' }
+      ]
+    },    
+     {
       test: /\.(png|svg|jpg|jpeg|gif)$/,
       use: [{
         loader: 'file-loader',
@@ -87,3 +96,7 @@ module.exports = {
     })
   ]
 };
+
+
+
+

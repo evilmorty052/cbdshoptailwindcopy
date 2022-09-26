@@ -1,5 +1,5 @@
 import * as Route from 'constants/routes';
-import logo from 'images/logo-full.png';
+import logo from 'images/logo2.png';
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -16,9 +16,7 @@ const Footer = () => {
       <div className="footer-col-1">
         <strong>
           <span>
-            Contacts <br />
-            tel : +237 651 97 76 85 <br />
-            email : lunetas@yahoo.fr
+            shop@medik420.com
           </span>
         </strong>
       </div>
@@ -32,7 +30,7 @@ const Footer = () => {
       <div className="footer-col-3">
         <strong>
           <span>
-            Welcome
+          CBD SHOP BY MEDIK 420
           </span>
         </strong>
       </div>

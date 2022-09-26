@@ -47,3 +47,28 @@ $color-github: #24292e;
 $color-github-hover: lighten($color-github, 5%);
 
 $color-success: #000;
+
+
+
+
+.cc{
+
+  /* ff 3.6+ */
+  background:-moz-linear-gradient(90deg, #FDC921 0%, #FDD85D 100%); 
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-linear-gradient(90deg, #FDC921 0%, #FDD85D 100%);
+
+  /* opera 11.10+ */
+  background:-o-linear-gradient(90deg, #FDC921 0%, #FDD85D 100%);
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FDD85D', endColorstr='#FDC921', GradientType=0 );
+
+  /* ie 10+ */
+  background:-ms-linear-gradient(90deg, #FDC921 0%, #FDD85D 100%);
+
+  /* global 94%+ browsers support */
+  background:linear-gradient(90deg, #FDC921 0%, #FDD85D 100%);
+
+}

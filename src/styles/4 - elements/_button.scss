@@ -1,8 +1,11 @@
 .button {
-  background: $button-color;
+  // background: $button-color;
+  background: #f3f3f3;
   padding: $m-size;
-  border: 1px solid $button-color;
-  color: $white;
+  // border: 1px solid $button-color;
+  border-radius: 8px;
+  // color: $white;
+  color: #D8BC41;
   font-weight: bold;
   position: relative;
   display: flex;

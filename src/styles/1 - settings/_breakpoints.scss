@@ -7,8 +7,23 @@
 
 
 // Breakpoints
+// $mobile: 30rem;
+// $tablet: 50rem;
+// $laptop: 64rem;
+// $desktop: 95rem;
+// $l-desktop: 102rem;
+
+
 $mobile: 30rem;
-$tablet: 50rem;
-$laptop: 64rem;
-$desktop: 95rem;
-$l-desktop: 102rem;
+$tablet: 768px;
+$laptop: 1060px;
+$desktop: 1200px;
+$l-desktop: 1700px;
+
+
+// xs: "480px",
+// ss: "620px",
+// sm: "768px",
+// md: "1060px",
+// lg: "1200px",
+// xl: "1700px",

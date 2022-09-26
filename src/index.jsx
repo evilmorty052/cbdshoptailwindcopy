@@ -9,10 +9,11 @@ import 'styles/style.scss';
 import WebFont from 'webfontloader';
 import App from './App';
 import firebase from './services/firebase';
+import '../src/index.css'
 
 WebFont.load({
   google: {
-    families: ['Tajawal']
+    families: ['poppins']
   }
 });
 

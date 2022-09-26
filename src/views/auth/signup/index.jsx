@@ -68,7 +68,7 @@ const SignUp = ({ history }) => {
           )}
           <div className={`auth ${authStatus?.message && (!authStatus?.success && 'input-error')}`}>
             <div className="auth-main">
-              <h3>Sign up to Lunetas-cam</h3>
+              <h3>Sign up To Shop with MEDIK 420 </h3>
               <Formik
                 initialValues={{
                   fullname: '',
