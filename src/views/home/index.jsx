@@ -9,6 +9,7 @@ import bannerImg from 'images/herobanner.png';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Test from './test';
+import test2 from './test2';
 
 
 const Home = () => {
@@ -52,8 +53,8 @@ const Home = () => {
           <div className="banner-img"><img src={bannerImg} alt="" className='image'/></div>
         </div>
         <div className="display">
-          <div className="display-header">
-            <h1 className='featured-header'>FEATURED</h1>
+          <div className="display-header mb-5">
+            <h1 className='featured-header text-blk  text-4xl'>FEATURED</h1>
             <Link to={FEATURED_PRODUCTS}>See All</Link>
           </div>
           {(errorFeatured && !isLoadingFeatured) ? (
@@ -70,8 +71,8 @@ const Home = () => {
           )}
         </div>
         <div className="display">
-          <div className="display-header ">
-            <h1 className='text-3xl text-white '>RECOMMENDED</h1>
+          <div className="display-header mb-5 ">
+            <h1 className=' text-blk  text-4xl '>RECOMMENDED</h1>
             <Link to={RECOMMENDED_PRODUCTS} >See All</Link>
           </div>
           {(errorRecommended && !isLoadingRecommended) ? (
