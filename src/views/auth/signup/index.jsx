@@ -32,7 +32,7 @@ const SignUp = ({ history }) => {
   const dispatch = useDispatch();
 
   useScrollTop();
-  useDocumentTitle('Sign Up | Lunetas-cam');
+  useDocumentTitle('Sign Up | MEDIK420-cam');
 
   useEffect(() => () => {
     dispatch(setAuthStatus(null));

@@ -6,7 +6,7 @@ import bannerImg from 'images/smoke.png';
 import React from 'react';
 
 const RecommendedProducts = () => {
-  useDocumentTitle('Recommended Products | Lunetas-cam');
+  useDocumentTitle('Recommended Products | MEDIK420-cam');
   useScrollTop();
 
   const {

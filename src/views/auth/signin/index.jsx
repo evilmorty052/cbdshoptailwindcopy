@@ -29,7 +29,7 @@ const SignIn = ({ history }) => {
   const dispatch = useDispatch();
 
   useScrollTop();
-  useDocumentTitle('Sign In | Lunetas-cam');
+  useDocumentTitle('Sign In | MEDIK420');
 
   useEffect(() => () => {
     dispatch(setAuthStatus(null));

@@ -30,7 +30,7 @@ const FormSchema = Yup.object().shape({
 });
 
 const Payment = ({ shipping, payment, subtotal }) => {
-  useDocumentTitle('Check Out Final Step | Lunetas-cam');
+  useDocumentTitle('Check Out Final Step | MEDIK420-cam');
   useScrollTop();
 
   const initFormikValues = {

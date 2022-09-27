@@ -9,11 +9,16 @@ import bannerImg from 'images/herobanner.png';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Test from './test';
-import test2 from './test2';
+import Test2 from './test2';
+import Test3 from './test3';
+import Test4 from './test4';
+import Test5 from './test5';
+import Test6 from './test6';
+import Test7 from './test7';
 
 
 const Home = () => {
-  useDocumentTitle('Lunetas-cam | Home');
+  useDocumentTitle('MEDIK 420 | Home');
   useScrollTop();
 
   const {
@@ -88,7 +93,16 @@ const Home = () => {
             />
           )}
         </div>
+        <div className='flex flex-col space-y-40'>
         <Test/>
+        <Test2/>
+        <Test3/>
+        <Test4/>
+        <Test5/>
+        <Test6/>
+        {/* <Test7/> */}
+        </div>
+        
       </div>
     </main>
     </>
