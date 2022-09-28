@@ -56,7 +56,8 @@ const Navigation = () => {
 
   if (store.user && store.user.role === 'ADMIN') {
     return null;
-  } if (window.screen.width <= 800) {
+  } 
+  if (window.screen.width <= 800) {
     return (
       <MobileNavigation
         // eslint-disable-next-line react/jsx-props-no-spreading
@@ -67,7 +68,7 @@ const Navigation = () => {
     );
   }
   return (
-    <nav className="navigation" ref={navbar}>
+    <nav className="navigation bg-plat mb-10" ref={navbar}>
       <div className="logo">
         <Link onClick={onClickLink} to="/"><img alt="Logo" src={logo} /></Link>
       </div>

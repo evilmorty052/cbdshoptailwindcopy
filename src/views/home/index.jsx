@@ -6,6 +6,7 @@ import {
   useDocumentTitle, useFeaturedProducts, useRecommendedProducts, useScrollTop
 } from 'hooks';
 import bannerImg from 'images/herobanner.png';
+import { MobileNavigation } from 'components/common';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Test from './test';
@@ -36,9 +37,9 @@ const Home = () => {
 
   return (
     <>
-    <main className="content bb ">
-      <div className="home ">
-        <div className="banner cc">
+    <main className="shop-content px-10 ">
+      <div className="home space-y-10 md:space-y-20">
+        <div className="banner mt-20 cc">
           <div className="banner-desc">
             <h1 className="text-thin">
               <strong>SHOP CBD <br/>WITH MEDIK 420</strong>
@@ -59,7 +60,7 @@ const Home = () => {
         </div>
         <div className="display">
           <div className="display-header mb-5">
-            <h1 className='featured-header text-blk  text-4xl'>FEATURED</h1>
+            <h1 className='featured-header text-blk  text-4xl mb-5'>FEATURED</h1>
             <Link to={FEATURED_PRODUCTS}>See All</Link>
           </div>
           {(errorFeatured && !isLoadingFeatured) ? (
@@ -77,7 +78,7 @@ const Home = () => {
         </div>
         <div className="display">
           <div className="display-header mb-5 ">
-            <h1 className=' text-blk  text-4xl '>RECOMMENDED</h1>
+            <h1 className=' text-blk  text-4xl mb-5'>RECOMMENDED</h1>
             <Link to={RECOMMENDED_PRODUCTS} >See All</Link>
           </div>
           {(errorRecommended && !isLoadingRecommended) ? (

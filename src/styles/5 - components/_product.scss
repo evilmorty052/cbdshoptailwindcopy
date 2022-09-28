@@ -5,7 +5,15 @@
   justify-content: center;
 
   @include mobile {
-    grid-template-columns: repeat(2, 1fr) !important;
+    // grid-template-columns: repeat(2, 1fr) !important;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2rem;
   }
 }
 
@@ -43,33 +51,46 @@
   position: relative;
 
   @include mobile {
-    margin-top: 5rem;
+    // margin-top: 5rem;
   }
 }
 
 .product-card {
-  max-width: 180px;
-  height: 230px;
+  // width: 100%;
+  // max-width: 180px;
+  // height: 230px;
   border: 1px solid $border-color;
   text-align: center;
   position: relative;
   background: $white;
+  width: 100%;
+  max-height: 30rem;
+  border: 2px solid #1a1a1a;
+  border-radius: 2rem;
   // box-shadow: 0 10px 15px rgba(0, 0, 0, .05);
   overflow: hidden;
   // margin: auto;
   // animation: slide-up .3s ease;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  // margin-bottom: 80px;
+  padding: 1rem;
+  // background-color: #1a1a1a;
+  border-radius: 2rem;
+  border: 1px solid $border-color;
+  transform: translateY(5rem);
 
   &:hover {
     cursor: pointer;
   }
 
   @include mobile {
-    height: 200px;
+    // height: 200px;
   }
 }
 
 .product-card:hover .product-card-content {
-  transform: translateY(-10px);
+  // transform: translateY(-10px);
 }
 
 .product-card:hover .product-card-button {
@@ -77,7 +98,7 @@
 }
 
 .product-card:hover .product-card-img-wrapper {
-  height: 8rem;
+  // height: 8rem;
   padding: 1rem;
 }
 
@@ -102,8 +123,8 @@
 }
 
 .product-loading:hover .product-card-img-wrapper {
-  width: 90%;
-  height: 100px;
+  // width: 90%;
+  // height: 100px;
 }
 
 .product-card-content {
@@ -121,12 +142,12 @@
   transition: all .4s ease-in-out;
 
   @include mobile {
-    height: 8rem;
+    // height: 8rem;
   }
 }
 
 .product-details {
-  padding: $m-size;
+  // padding: $m-size;
 }
 
 .product-card-price {
@@ -194,7 +215,7 @@
   @include tablet {
     width: 100%;
     margin: 0;
-    margin-top: 5rem;
+    // margin-top: 5rem;
   }
 }
 
@@ -534,7 +555,7 @@
     cursor: pointer;
 
     .product-display-img img {
-      transform: scale(1.1);
+      // transform: scale(5.1);
     
     }
   }

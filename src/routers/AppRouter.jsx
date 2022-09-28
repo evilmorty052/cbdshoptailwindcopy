@@ -8,6 +8,7 @@ import * as view from 'views';
 import AdminRoute from './AdminRoute';
 import ClientRoute from './ClientRoute';
 import PublicRoute from './PublicRoute';
+import { MobileNavigation } from 'components/common';
 
 // Revert back to history v4.10.0 because
 // v5.0 breaks navigation

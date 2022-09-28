@@ -15,7 +15,7 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: Arial,;
+  font-family: "poppins";
   font-size: $baseFontSize;
   // background: $background-color;
   font-weight: bold;
@@ -63,9 +63,9 @@ p{
 
 
 
-.featured-header{
-  color: #99D6EA;
-}
+// .featured-header{
+//   color: #99D6EA;
+// }
 
 .price{
   color: aqua;
@@ -165,6 +165,7 @@ p{
 
 #app {
   width: 100%;
+  // position: relative;
   // background-color: #6798C0;
 
 }
@@ -172,10 +173,29 @@ p{
 .content {
   width: 100%;
   min-height: 100vh;
-  position: relative;
   padding: $top $pad-desktop;
   display: flex;
   animation: fadeIn .5s ease;
+  // margin-top: 20px;
+  // background-color: #99D6EA;
+  // background-color: #6798C0;
+  
+
+
+  @media (max-width: $mobile) {
+    padding: 5rem $m-size;
+    flex-direction: column;
+  }
+}
+
+.shop-content{
+  width: 100%;
+  min-height: 100vh;
+  // padding: $top $pad-desktop;
+  display: flex;
+  padding: $top $pad-desktop;
+  animation: fadeIn .5s ease;
+  margin-top: 20px;
   // background-color: #99D6EA;
   // background-color: #6798C0;
   
